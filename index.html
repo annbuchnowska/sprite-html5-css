@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>example of menu navigation based on image sprite</title>
+<style type="text/css">
+    nav a {
+        display: inline-block;
+        text-indent: -999999px;
+        background: url("sprite.png") blue no-repeat;
+    }
+
+    nav .home {
+      height: 14px;
+      width: 110px;
+        background-position: 0 0;
+    }
+    nav .konkurs {
+      height: 14px;
+      width: 190px;
+        background-position: -110px 0;
+    }
+    nav .zasady {
+      height: 14px;
+      width: 90px;
+      background-position: -300px 0;
+    }
+   nav .home:hover {
+        background-position: 0 -14px;
+    }
+    nav .konkurs:hover {
+        background-position: -110px -14px;
+    }
+    nav .zasady:hover {
+        background-position: -300px -14px;
+    }
+    nav .home:active {
+        background-position: 0 -28px;
+    }
+    nav .konkurs:active {
+        background-position: -110px -28px;
+    }
+     nav .zasady:active {
+        background-position: -300px -28px;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="home">home</a>
+        <a href="#" class="konkurs">konkurs</a>
+        <a href="#" class="zasady">zasady</a>
+    </nav>
+</body>
+</html>
